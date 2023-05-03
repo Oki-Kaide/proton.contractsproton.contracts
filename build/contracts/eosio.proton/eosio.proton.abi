@@ -1,0 +1,627 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "addkyc",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "kyc",
+                    "type": "kyc_prov"
+                }
+            ]
+        },
+        {
+            "name": "addkycprov",
+            "base": "",
+            "fields": [
+                {
+                    "name": "kyc_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "desc",
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "type": "string"
+                },
+                {
+                    "name": "iconurl",
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "blkycprov",
+            "base": "",
+            "fields": [
+                {
+                    "name": "kyc_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "state",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "kickbp",
+            "base": "",
+            "fields": [
+                {
+                    "name": "producer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "kyc_prov",
+            "base": "",
+            "fields": [
+                {
+                    "name": "kyc_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "kyc_level",
+                    "type": "string"
+                },
+                {
+                    "name": "kyc_date",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "kyc_providers_list",
+            "base": "",
+            "fields": [
+                {
+                    "name": "kyc_provider",
+                    "type": "name"
+                },
+                {
+                    "name": "desc",
+                    "type": "string"
+                },
+                {
+                    "name": "url",
+                    "type": "string"
+                },
+                {
+                    "name": "iconurl",
+                    "type": "string"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "blisted",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "newaccres",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "pair_string_uint8",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "string"
+                },
+                {
+                    "name": "value",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "permission",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "createacc",
+                    "type": "uint8"
+                },
+                {
+                    "name": "vote",
+                    "type": "uint8"
+                },
+                {
+                    "name": "regprod",
+                    "type": "uint8"
+                },
+                {
+                    "name": "regproxy",
+                    "type": "uint8"
+                },
+                {
+                    "name": "setcontract",
+                    "type": "uint8"
+                },
+                {
+                    "name": "namebids",
+                    "type": "uint8"
+                },
+                {
+                    "name": "rex",
+                    "type": "uint8"
+                },
+                {
+                    "name": "delegate",
+                    "type": "uint8"
+                },
+                {
+                    "name": "undelegate",
+                    "type": "uint8"
+                },
+                {
+                    "name": "sellram",
+                    "type": "uint8"
+                },
+                {
+                    "name": "buyram",
+                    "type": "uint8"
+                }
+            ]
+        },
+        {
+            "name": "remove",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "removekyc",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "kyc_provider",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "reqperm",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "permission",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "rmvkycprov",
+            "base": "",
+            "fields": [
+                {
+                    "name": "kyc_provider",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "setperm",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "perms",
+                    "type": "pair_string_uint8[]"
+                }
+            ]
+        },
+        {
+            "name": "setperm2",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "perms",
+                    "type": "uint8[]"
+                }
+            ]
+        },
+        {
+            "name": "setuserava",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "ava",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "setusername",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "tuple_name_name",
+            "base": "",
+            "fields": [
+                {
+                    "name": "field_0",
+                    "type": "name"
+                },
+                {
+                    "name": "field_1",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "tuple_name_string",
+            "base": "",
+            "fields": [
+                {
+                    "name": "field_0",
+                    "type": "name"
+                },
+                {
+                    "name": "field_1",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "updateaacts",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "aacts",
+                    "type": "tuple_name_name[]"
+                }
+            ]
+        },
+        {
+            "name": "updateac",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "ac",
+                    "type": "tuple_name_string[]"
+                }
+            ]
+        },
+        {
+            "name": "updatekyc",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "kyc",
+                    "type": "kyc_prov"
+                }
+            ]
+        },
+        {
+            "name": "updateraccs",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "raccs",
+                    "type": "name[]"
+                }
+            ]
+        },
+        {
+            "name": "userinfo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "avatar",
+                    "type": "string"
+                },
+                {
+                    "name": "verified",
+                    "type": "bool"
+                },
+                {
+                    "name": "date",
+                    "type": "uint64"
+                },
+                {
+                    "name": "verifiedon",
+                    "type": "uint64"
+                },
+                {
+                    "name": "verifier",
+                    "type": "name"
+                },
+                {
+                    "name": "raccs",
+                    "type": "name[]"
+                },
+                {
+                    "name": "aacts",
+                    "type": "tuple_name_name[]"
+                },
+                {
+                    "name": "ac",
+                    "type": "tuple_name_string[]"
+                },
+                {
+                    "name": "kyc",
+                    "type": "kyc_prov[]"
+                }
+            ]
+        },
+        {
+            "name": "userverify",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                },
+                {
+                    "name": "verifier",
+                    "type": "name"
+                },
+                {
+                    "name": "verified",
+                    "type": "bool"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addkyc",
+            "type": "addkyc",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: addkyc\nsummary: 'addkyc'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nAdds KYC approval to account {{acc}} from kyc provider {{kyc}}"
+        },
+        {
+            "name": "addkycprov",
+            "type": "addkycprov",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: addkycprov\nsummary: 'addkycprov'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nAdds {{kyc_provider}} as a kyc_provider"
+        },
+        {
+            "name": "blkycprov",
+            "type": "blkycprov",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: blkycprov\nsummary: 'blkycprov'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nBlacklists KYC provider {{kyc_provider}}"
+        },
+        {
+            "name": "kickbp",
+            "type": "kickbp",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: kickbp\nsummary: 'kickbp'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/admin.png#9bf1cec664863bd6aaac0f814b235f8799fb02c850e9aa5da34e8a004bd6518e\n---\nRemoves the ability of account {{producer}} to register as a block producer. This is probably called from kickbp in eosio.system."
+        },
+        {
+            "name": "newaccres",
+            "type": "newaccres",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: newaccres\nsummary: 'newaccres'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\n\nGive resources to new account"
+        },
+        {
+            "name": "remove",
+            "type": "remove",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: remove\nsummary: 'remove'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nRemoves user info data for {{acc}}"
+        },
+        {
+            "name": "removekyc",
+            "type": "removekyc",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: removekyc\nsummary: 'removekyc'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nRemoves KYC approval for account {{acc}} from kyc provider {{kyc}}"
+        },
+        {
+            "name": "reqperm",
+            "type": "reqperm",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: reqperm\nsummary: 'reqperm'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nRequest Permissions for {{acc}} for whitelisted Proton actions"
+        },
+        {
+            "name": "rmvkycprov",
+            "type": "rmvkycprov",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: rmvkycprov\nsummary: 'rmvkycprov'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nRemoves KYC provider {{kyc_provider}}"
+        },
+        {
+            "name": "setperm",
+            "type": "setperm",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: setperm\nsummary: 'setperm'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nInitializes permissions for account {{acc}} for whitelisted EOSIO functionality. (no longer used)"
+        },
+        {
+            "name": "setperm2",
+            "type": "setperm2",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: setperm2\nsummary: 'setperm2'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nInitializes permissions for account {{acc}} for whitelisted EOSIO functionality."
+        },
+        {
+            "name": "setuserava",
+            "type": "setuserava",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: setuserava\nsummary: 'setuserava'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nSet or update avatar for account {{acc}}"
+        },
+        {
+            "name": "setusername",
+            "type": "setusername",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: setusername\nsummary: 'setusername'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nSet or update nickname for account {{acc}}"
+        },
+        {
+            "name": "updateaacts",
+            "type": "updateaacts",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: updateaacts\nsummary: 'updateaacts'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nUpdates a whitelist of actions for user {{acc}} for additional security."
+        },
+        {
+            "name": "updateac",
+            "type": "updateac",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: updateac\nsummary: 'updateac'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nUpdates a whitelist of tokens for user {{acc}} for additional security."
+        },
+        {
+            "name": "updatekyc",
+            "type": "updatekyc",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: updatekyc\nsummary: 'updatekyc'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nUpdates KYC approval for account {{acc}} from kyc provider {{kyc}}"
+        },
+        {
+            "name": "updateraccs",
+            "type": "updateraccs",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: updateraccs\nsummary: 'updateraccs'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nUpdates a whitelist of accounts for user {{acc}} for additional security."
+        },
+        {
+            "name": "userverify",
+            "type": "userverify",
+            "ricardian_contract": "---\nspec_version: \"0.2.0\"\ntitle: userverify\nsummary: 'userverify'\nicon: https://raw.githubusercontent.com/EOSIO/eosio.contracts/master/contracts/icons/account.png#3d55a2fc3a5c20b456f5657faf666bc25ffd06f4836c5e8256f741149b0b294f\n---\nAdds identity verification for {{acc}} by verification authority {{verifier}}"
+        }
+    ],
+    "tables": [
+        {
+            "name": "kycproviders",
+            "type": "kyc_providers_list",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "permissions",
+            "type": "permission",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "usersinfo",
+            "type": "userinfo",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [
+        {
+            "id": "Warranty",
+            "body": "The invoker of the contract action shall uphold its Obligations under this Contract in a timely and workmanlike manner, using knowledge and recommendations for performing the services which meet generally acceptable standards set forth by EOS.IO Blockchain Block Producers."
+        },
+        {
+            "id": "Default",
+            "body": "The occurrence of any of the following shall constitute a material default under this Contract:"
+        },
+        {
+            "id": "Remedies",
+            "body": "In addition to any and all other rights a party may have available according to law, if a party defaults by failing to substantially perform any provision, term or condition of this Contract, the other party may terminate the Contract by providing written notice to the defaulting party. This notice shall describe with sufficient detail the nature of the default. The party receiving such notice shall promptly be removed from being a Block Producer and this Contract shall be automatically terminated."
+        },
+        {
+            "id": "ForceMajeure",
+            "body": "If performance of this Contract or any obligation under this Contract is prevented, restricted, or interfered with by causes beyond either party's reasonable control (\"Force Majeure\"), and if the party unable to carry out its obligations gives the other party prompt written notice of such event, then the obligations of the party invoking this provision shall be suspended to the extent necessary by such event. The term Force Majeure shall include, without limitation, acts of God, fire, explosion, vandalism, storm or other similar occurrence, orders or acts of military or civil authority, or by national emergencies, insurrections, riots, or wars, or strikes, lock-outs, work stoppages, or supplier failures. The excused party shall use reasonable efforts under the circumstances to avoid or remove such causes of non-performance and shall proceed to perform with reasonable dispatch whenever such causes are removed or ceased. An act or omission shall be deemed within the reasonable control of a party if committed, omitted, or caused by such party, or its employees, officers, agents, or affiliates."
+        },
+        {
+            "id": "DisputeResolution",
+            "body": "Any controversies or disputes arising out of or relating to this Contract will be resolved by binding arbitration under the default rules set forth by the EOS.IO Blockchain. The arbitrator's award will be final, and judgment may be entered upon it by any court having proper jurisdiction."
+        },
+        {
+            "id": "EntireAgreement",
+            "body": "This Contract contains the entire agreement of the parties, and there are no other promises or conditions in any other agreement whether oral or written concerning the subject matter of this Contract. This Contract supersedes any prior written or oral agreements between the parties."
+        },
+        {
+            "id": "Severability",
+            "body": "If any provision of this Contract will be held to be invalid or unenforceable for any reason, the remaining provisions will continue to be valid and enforceable. If a court finds that any provision of this Contract is invalid or unenforceable, but that by limiting such provision it would become valid and enforceable, then such provision will be deemed to be written, construed, and enforced as so limited."
+        },
+        {
+            "id": "Amendment",
+            "body": "This Contract may be modified or amended in writing by mutual agreement between the parties, if the writing is signed by the party obligated under the amendment."
+        },
+        {
+            "id": "GoverningLaw",
+            "body": "This Contract shall be construed in accordance with the Maxims of Equity."
+        },
+        {
+            "id": "Notice",
+            "body": "Any notice or communication required or permitted under this Contract shall be sufficiently given if delivered to a verifiable email address or to such other email address as one party may have publicly furnished in writing, or published on a broadcast contract provided by this blockchain for purposes of providing notices of this type."
+        },
+        {
+            "id": "WaiverOfContractualRight",
+            "body": "The failure of either party to enforce any provision of this Contract shall not be construed as a waiver or limitation of that party's right to subsequently enforce and compel strict compliance with every provision of this Contract."
+        },
+        {
+            "id": "ArbitratorsFees_",
+            "body": "In any action arising hereunder or any separate action pertaining to the validity of this Agreement, both sides shall pay half the initial cost of arbitration, and the prevailing party shall be awarded reasonable arbitrator's fees and costs."
+        },
+        {
+            "id": "ConstructionAndInterpretation",
+            "body": "The rule requiring construction or interpretation against the drafter is waived. The document shall be deemed as if it were drafted by both parties in a mutual effort."
+        },
+        {
+            "id": "InWitnessWhereof",
+            "body": "In witness whereof, the parties hereto have caused this Agreement to be executed by themselves or their duly authorized representatives as of the date of execution, and authorized as proven by the cryptographic signature on the transaction that invokes this contract."
+        }
+    ],
+    "variants": []
+}
